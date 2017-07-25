@@ -1,0 +1,43 @@
+{
+"mysql":[{
+	"host":"localhost",
+	"user":"logger",
+	"password":"logger",
+	"database":"sensors"
+	}],
+"sensors":[{
+	"sensor1":"TempHumid"
+	}],
+"triggerlimits":[{
+	"sensor1lowlimit":"5",
+	"sensor1highlimit":"28"
+	}],
+"humiditytriggers":[{
+	"sensor1_humidity_low_limit":"40",
+	"sensor1_humidity_high_limit":"60"
+	}],
+"sensorgpios":[{
+	"gpiosensor1":"22"
+	}],
+"mailinfo":[{
+	"senderaddress":"rpisensors@gmail.com",
+	"receiveraddress":"rpisensors@gmail.com",
+	"username":"rpisensors@gmail.com",
+	"password":"rpia2s1d4f3",
+	"subjectmessage":"Info from Rpi Temp Logger",
+	"subjectwarning":"Warning from Rpi Temp Logger"
+	}],
+"sqlBackupDump":[{
+	"backupDumpEnabled":"y",
+	"backupHour":"23"
+	}],
+"connectionCheck":[{
+	"connectionCheckEnabled":"y",
+	"connectionCheckDay":"5",
+	"connectionCheckHour":"23"
+	}],
+"sensortype":"22",
+"sensoramount":"1",
+"sqlbackuppath":"/home/pi/AirSensor/Backups/",
+"adafruitpath":"/home/pi/AirSensor/AdafruitDHT.py"
+}
