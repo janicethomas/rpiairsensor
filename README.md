@@ -7,7 +7,7 @@ This is a prototype air sensor which monitors
          - Dust sensor 
         
         
-DH22 sensor is used for Temperature and Humidity. MQ135 sensor is hooked via MCP3008 ( A2D convertor) to monitor certain pollutant gases. Currently only an index (dac value) and CO2 are computed. Similarly the  Sharp’s GP2Y1010AU0F infrared dust and haze sensor is used to approximate the PM matter in the air. These are interefaced with Raspberry Pi 2/2+/3. MQ135 and GP2Y1010AU0F are analog sensors and needs interfacing with MCP3008 and approximate algorithm using the datasheet to determine the pollutant factors. DHT22 give digal output which can be directly read.
+DH22 sensor is used for Temperature and Humidity. MQ135 sensor is hooked via MCP3008 ( A2D convertor) to monitor certain pollutant gases. Currently only an index (dac value) and CO2 are computed. Similarly the  Sharpâ€™s GP2Y1010AU0F infrared dust and haze sensor is used to approximate the PM matter in the air. These are interefaced with Raspberry Pi 2/2+/3. MQ135 and GP2Y1010AU0F are analog sensors and needs interfacing with MCP3008 and approximate algorithm using the datasheet to determine the pollutant factors. DHT22 give digal output which can be directly read.
 
 This is a project proposed by me and my colleagues to be submitted in our Science Exhibition at Harvest International School, Bangalore. The prototype is constructed on breadboards and the sensor data is logged into a MYSQL database. A frontend Apache webpage display the raw data and charts the above sensor values using Google chart.
 The future scope is to link all such sensors spread across cities and other school on to a common platform and provide an overall geographic heatmap of the pollution around us. A front end APP will collate all these sensor node(s) readings and present it on a map.
@@ -35,5 +35,6 @@ https://en.wikipedia.org/wiki/Particulates
 https://www.epa.gov/sites/production/files/2014-05/documents/huff-particle.pdf
 http://www.airveda.com/understanding_data.html
 https://www.co2.earth/
+
 
       
