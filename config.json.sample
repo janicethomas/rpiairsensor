@@ -2,28 +2,39 @@
 "mysql":[{
 	"host":"localhost",
 	"user":"logger",
-	"password":"logger",
+	"password":"<your database password>",
 	"database":"sensors"
 	}],
 "sensors":[{
-	"sensor1":"TempHumid"
+	"sensor1":"TempHumid",
+	"sensor2":"AirQuality",
+	"sensor3":"DustSensor"
 	}],
-"triggerlimits":[{
-	"sensor1lowlimit":"5",
-	"sensor1highlimit":"28"
+"dht22_temptriggers":[{
+	"sensor1_temp_low_limit":"5",
+	"sensor1_temp_high_limit":"28"
 	}],
-"humiditytriggers":[{
+"dht22_humiditytriggers":[{
 	"sensor1_humidity_low_limit":"40",
 	"sensor1_humidity_high_limit":"60"
 	}],
 "sensorgpios":[{
-	"gpiosensor1":"22"
+	"gpiosensor1":"22",
+	"gpiospiport":"0",
+	"gpiospidevice":"0",
+	"gpiospichannel":"0",
+	"gpiopm10pin":"2",
+	"gpioiledpin":"18"
 	}],
+"mq135_refvalues":[{
+	"r0":"76.63",
+	"rl":"10"
+	}],	
 "mailinfo":[{
-	"senderaddress":"rpisensors@gmail.com",
-	"receiveraddress":"rpisensors@gmail.com",
-	"username":"rpisensors@gmail.com",
-	"password":"rpia2s1d4f3",
+	"senderaddress":"<put your google from address here>",
+	"receiveraddress":"<put your google To address here>",
+	"username":"<login for above google sender id>",
+	"password":"<password for above google sender id>",
 	"subjectmessage":"Info from Rpi Temp Logger",
 	"subjectwarning":"Warning from Rpi Temp Logger"
 	}],
