@@ -4,7 +4,7 @@
 
 $host      = "localhost";
 $user      = "logger";
-$password  = "logger";
+$password  = "<your db password here>";
 $database  = "sensors";
 $sensortbl = "sensordata";
 $sensor1   = "TempHumid";
